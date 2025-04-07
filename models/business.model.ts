@@ -280,6 +280,6 @@ businessSchema.set('toJSON', {
   },
 });
 
-const Business = mongoose.models.Business || mongoose.model<IBusiness>('Business', businessSchema);
+const Business = (mongoose.models.Business as mongoose.Model<IBusiness>) || mongoose.model<IBusiness>(.Business., businessSchema);
 
 export default Business; 
