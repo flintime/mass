@@ -194,6 +194,6 @@ userSchema.statics.updateAIPreference = async function(userId: string | number, 
 };
 
 // Create or get the model
-const User = mongoose.models.User as IUserModel || mongoose.model<IUser, IUserModel>('User', userSchema);
+const User = (mongoose.models.User as IUserModel) || mongoose.model<IUser, IUserModel>('User', userSchema);
 
 export default User; 

@@ -7,9 +7,9 @@ import UserModel from '../../../models/user';
 import jwt from 'jsonwebtoken';
 import { ChatCompletionMessageParam } from 'openai/resources/chat';
 import { retrieveRelevantChunks, formatChunksForContext, Document as RagDocument } from '@/app/lib/vector-store';
-import { SenderType } from '@/models/chat';
-import { connectMongo } from '@/lib/db';
-import { socketService } from '@/lib/socket';
+import { SenderType } from '@/lib/types';
+import dbConnect from '@/lib/db';
+import { socketService } from '@/lib/socket-fallback';
 
 const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key';
 
@@ -2459,7 +2459,7 @@ This is a hard context boundary - previous appointment context should be complet
 
     // Save AI response to database (in addition to socket delivery)
     try {
-      await connectMongo();
+      await dbConnect();
       const chatRoom = await ChatRoom.findById(chatRoomId);
       if (!chatRoom) {
         return NextResponse.json({ error: 'Chat room not found', success: false }, { status: 404 });
