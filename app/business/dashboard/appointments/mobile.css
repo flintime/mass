@@ -1,0 +1,229 @@
+/* Mobile styles for the appointments page */
+
+@media (max-width: 768px) {
+  /* Match the mobile-dashboard-header class to ensure it's not hidden */
+  .mobile-dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background-color: white;
+    border-bottom: 1px solid #f0f0f0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Container padding adjustments */
+  .mobile-container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    padding-top: 0.5rem !important;
+  }
+  
+  /* Page-specific header styles */
+  .mobile-header {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .mobile-header h1 {
+    font-size: 1.5rem !important;
+  }
+  
+  .mobile-header-actions {
+    flex-wrap: wrap;
+    margin-top: 0.75rem;
+    width: 100%;
+  }
+  
+  /* Stats cards scrollable container */
+  .mobile-stats-container {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.25rem !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    gap: 0.75rem;
+  }
+  
+  .mobile-stats-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  
+  /* Individual stat cards */
+  .mobile-stat-card {
+    min-width: 140px;
+    flex: 0 0 auto;
+  }
+  
+  /* Tab adjustments */
+  .mobile-tabs {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .mobile-tab-list {
+    width: max-content !important;
+  }
+  
+  .mobile-tab {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+  
+  /* Filter adjustments */
+  .mobile-filters {
+    width: 100%;
+    flex-direction: column;
+    margin-left: 0 !important;
+    margin-top: 0.75rem;
+  }
+  
+  /* Mobile date picker */
+  .mobile-filters .react-datepicker-wrapper {
+    width: 100% !important;
+    margin-top: 0.5rem;
+  }
+  
+  .mobile-filters .react-datepicker-popper {
+    width: 100% !important;
+    max-width: 320px;
+    z-index: 50 !important;
+  }
+  
+  .mobile-filters .react-datepicker {
+    width: 100% !important;
+    font-size: 0.875rem !important;
+  }
+  
+  /* Global DatePicker styles for mobile */
+  .react-datepicker-wrapper {
+    width: 100% !important;
+  }
+  
+  .react-datepicker-popper {
+    width: 100% !important;
+    max-width: 320px;
+    z-index: 999 !important; /* Higher z-index to ensure visibility */
+    position: fixed !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: auto !important;
+  }
+  
+  .react-datepicker {
+    width: 100% !important;
+    font-size: 0.875rem !important;
+    border-radius: 0.5rem !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  }
+  
+  .react-datepicker__month-container {
+    width: 100% !important;
+  }
+  
+  .react-datepicker__day {
+    width: 2rem !important;
+    height: 2rem !important;
+    line-height: 2rem !important;
+    margin: 0.2rem !important;
+  }
+  
+  .react-datepicker__header {
+    padding-top: 0.8rem !important;
+    background-color: #f9fafb !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+  }
+  
+  /* DatePicker Portal styling */
+  .react-datepicker-portal {
+    z-index: 9999 !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  
+  .react-datepicker-portal .react-datepicker {
+    font-size: 1rem !important;
+    background-color: white !important;
+    border-radius: 0.5rem !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2) !important;
+    border: none !important;
+  }
+  
+  .react-datepicker-portal .react-datepicker__month-container {
+    padding: 0.5rem !important;
+  }
+  
+  .react-datepicker-portal .react-datepicker__day {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    line-height: 2.5rem !important;
+    margin: 0.2rem !important;
+  }
+  
+  .react-datepicker-portal .react-datepicker__day--selected,
+  .react-datepicker-portal .react-datepicker__day--keyboard-selected {
+    background-color: #3b82f6 !important;
+    color: white !important;
+    border-radius: 50% !important;
+  }
+  
+  /* Dialog DatePicker styles */
+  .mobile-dialog .react-datepicker-wrapper {
+    width: 100% !important;
+  }
+  
+  .mobile-dialog .react-datepicker__input-container input {
+    width: 100% !important;
+    padding: 0.5rem !important;
+    font-size: 1rem !important;
+    height: 2.5rem !important;
+  }
+  
+  /* Appointment cards */
+  .mobile-appointments-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .mobile-appointment-card {
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer buttons */
+  .mobile-card-footer {
+    flex-direction: column;
+  }
+  
+  .mobile-card-footer button {
+    margin-top: 0.5rem;
+  }
+  
+  /* Dialog adjustments */
+  .mobile-dialog {
+    width: 90vw !important;
+    max-width: 400px !important;
+  }
+  
+  /* General spacing */
+  .mobile-my-2 {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .mobile-px-3 {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+  
+  /* Loading state */
+  .mobile-loading {
+    height: calc(100vh - 6rem) !important;
+  }
+} 

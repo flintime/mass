@@ -1,0 +1,75 @@
+name: flintime
+region: nyc
+services:
+  - name: flintime-web
+    github:
+      repo: dineshreddy/flintimeinc1v72
+      branch: main
+    build_command: ./do-build.sh
+    run_command: ./do-start.sh
+    source_dir: /
+    instance_size_slug: basic-xs
+    instance_count: 1
+    envs:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        value: ${mongodb.DATABASE_URL}
+      - key: NEXTAUTH_URL
+        value: https://flintime.com
+      - key: NEXT_PUBLIC_APP_URL
+        value: https://flintime.com
+      - key: NEXT_PUBLIC_API_URL
+        value: https://flintime.com/api
+      - key: JWT_SECRET
+        value: ${flintime.JWT_SECRET}
+      - key: DO_SPACES_ENDPOINT
+        value: nyc3.digitaloceanspaces.com
+      - key: DO_SPACES_CDN_ENDPOINT
+        value: flintime.nyc3.cdn.digitaloceanspaces.com
+      - key: DO_SPACES_BUCKET
+        value: flintime
+      - key: DO_SPACES_REGION
+        value: nyc3
+      - key: STRIPE_PUBLIC_KEY
+        value: ${flintime.STRIPE_PUBLIC_KEY}
+      - key: STRIPE_SECRET_KEY
+        value: ${flintime.STRIPE_SECRET_KEY}
+      - key: STRIPE_WEBHOOK_SECRET
+        value: ${flintime.STRIPE_WEBHOOK_SECRET}
+      - key: STRIPE_API_VERSION
+        value: 2023-10-16
+      - key: INTERNAL_WEBHOOK_SECRET
+        value: ${flintime.INTERNAL_WEBHOOK_SECRET}
+      - key: DO_APP_PLATFORM
+        value: "true"
+    routes:
+      - path: /
+    http_port: 3000
+    health_check:
+      path: /api/health
+      port: 3000
+      initial_delay_seconds: 30
+      period_seconds: 60
+    alerts:
+      - rule: CPU_UTILIZATION
+        value: 90
+        operator: GREATER_THAN
+        window: TEN_MINUTES
+      - rule: MEM_UTILIZATION
+        value: 90
+        operator: GREATER_THAN
+        window: FIVE_MINUTES
+    domains:
+      - domain: flintime.com
+        type: PRIMARY
+      - domain: www.flintime.com
+        type: ALIAS
+
+# Only using MongoDB
+databases:
+  - name: mongodb
+    engine: MONGODB
+    production: true
+
+# Note: MongoDB connection is configured via the environment variable MONGODB_URI 

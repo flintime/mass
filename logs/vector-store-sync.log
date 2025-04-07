@@ -1,0 +1,74 @@
+
+[2025-03-06T20:41:48.877Z] Starting vector store sync...
+[2025-03-06T20:41:48.879Z] Environment check:
+[2025-03-06T20:41:48.879Z] - MONGODB_URI:
+[2025-03-06T20:41:48.879Z] - OPENAI_API_KEY:
+[2025-03-06T20:41:48.879Z] Connecting to MongoDB...
+[2025-03-06T20:41:48.879Z] Creating new database connection with timeout settings:
+[2025-03-06T20:41:48.888Z] ERROR: (node:8042) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[2025-03-06T20:41:48.889Z] [LocalVectorStore] Storage directory created at /Users/dineshreddy/Desktop/flintimeinc1v72/data/vector-store
+[2025-03-06T20:41:48.891Z] [LocalVectorStore] Loaded 5 vectors for business sample-business-123
+[2025-03-06T20:41:48.891Z] [LocalVectorStore] Loaded vectors for 1 businesses
+[2025-03-06T20:41:49.088Z] MongoDB connected successfully
+[2025-03-06T20:41:49.089Z] Connected to MongoDB
+[2025-03-06T20:41:49.089Z] Initializing vector store...
+[2025-03-06T20:41:49.090Z] [LocalVectorStore] Storage directory created at /Users/dineshreddy/Desktop/flintimeinc1v72/data/vector-store
+[2025-03-06T20:41:49.090Z] [LocalVectorStore] Loaded 5 vectors for business sample-business-123
+[2025-03-06T20:41:49.090Z] [LocalVectorStore] Loaded vectors for 1 businesses
+[2025-03-06T20:41:49.090Z] Syncing specific business: 67c550f9946155c8a1630886
+[2025-03-06T20:41:49.091Z] [VectorStore] Starting sync for business 67c550f9946155c8a1630886
+[2025-03-06T20:41:49.091Z] [VectorStore] Deleting existing vectors for business 67c550f9946155c8a1630886
+[2025-03-06T20:41:49.091Z] [VectorStore] Deleted 0 existing vectors for business 67c550f9946155c8a1630886
+[2025-03-06T20:41:49.091Z] ERROR: [VectorStore] Error in syncBusinessToVectorStore:
+[2025-03-06T20:41:49.091Z] ERROR: Error during vector store sync:
+[2025-03-06T20:41:49.091Z] ERROR: MissingSchemaError: Schema hasn't been registered for model "Business".
+Use mongoose.model(name, schema)
+
+[2025-03-21T05:02:02.678Z] Starting vector store sync...
+[2025-03-21T05:02:02.679Z] Environment check:
+[2025-03-21T05:02:02.680Z] - MONGODB_URI:
+[2025-03-21T05:02:02.680Z] - OPENAI_API_KEY:
+[2025-03-21T05:02:02.680Z] Connecting to MongoDB...
+[2025-03-21T05:02:02.689Z] ERROR: (node:6080) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[2025-03-21T05:02:02.691Z] [LocalVectorStore] Storage directory created at /Users/dineshreddy/Desktop/flintimeinc1v72/data/vector-store
+[2025-03-21T05:02:02.694Z] [LocalVectorStore] Loaded 13 vectors for business 67c550f9946155c8a1630886
+[2025-03-21T05:02:02.695Z] [LocalVectorStore] Loaded 5 vectors for business sample-business-123
+[2025-03-21T05:02:02.695Z] [LocalVectorStore] Loaded vectors for 2 businesses
+[2025-03-21T05:02:03.236Z] MongoDB connected successfully
+[2025-03-21T05:02:03.237Z] Initializing vector store...
+[2025-03-21T05:02:03.237Z] [LocalVectorStore] Storage directory created at /Users/dineshreddy/Desktop/flintimeinc1v72/data/vector-store
+[2025-03-21T05:02:03.239Z] [LocalVectorStore] Loaded 13 vectors for business 67c550f9946155c8a1630886
+[2025-03-21T05:02:03.239Z] [LocalVectorStore] Loaded 5 vectors for business sample-business-123
+[2025-03-21T05:02:03.240Z] [LocalVectorStore] Loaded vectors for 2 businesses
+[2025-03-21T05:02:03.240Z] Syncing all businesses...
+[2025-03-21T05:02:03.240Z] [VectorStore] Starting sync for all businesses
+[2025-03-21T05:02:03.240Z] ERROR: [VectorStore] Error in syncAllBusinessesToVectorStore:
+[2025-03-21T05:02:03.240Z] ERROR: Error during vector store sync:
+[2025-03-21T05:02:03.240Z] ERROR: MissingSchemaError: Schema hasn't been registered for model "Business".
+Use mongoose.model(name, schema)
+
+[2025-03-21T05:04:40.791Z] Starting vector store sync...
+[2025-03-21T05:04:40.793Z] Environment check:
+[2025-03-21T05:04:40.793Z] - MONGODB_URI:
+[2025-03-21T05:04:40.793Z] - OPENAI_API_KEY:
+[2025-03-21T05:04:40.793Z] Connecting to MongoDB...
+[2025-03-21T05:04:40.802Z] ERROR: (node:6168) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[2025-03-21T05:04:40.804Z] [LocalVectorStore] Storage directory created at /Users/dineshreddy/Desktop/flintimeinc1v72/data/vector-store
+[2025-03-21T05:04:40.807Z] [LocalVectorStore] Loaded 13 vectors for business 67c550f9946155c8a1630886
+[2025-03-21T05:04:40.808Z] [LocalVectorStore] Loaded 5 vectors for business sample-business-123
+[2025-03-21T05:04:40.808Z] [LocalVectorStore] Loaded vectors for 2 businesses
+[2025-03-21T05:04:41.327Z] MongoDB connected successfully
+[2025-03-21T05:04:41.328Z] Initializing vector store...
+[2025-03-21T05:04:41.328Z] [LocalVectorStore] Storage directory created at /Users/dineshreddy/Desktop/flintimeinc1v72/data/vector-store
+[2025-03-21T05:04:41.331Z] [LocalVectorStore] Loaded 13 vectors for business 67c550f9946155c8a1630886
+[2025-03-21T05:04:41.331Z] [LocalVectorStore] Loaded 5 vectors for business sample-business-123
+[2025-03-21T05:04:41.331Z] [LocalVectorStore] Loaded vectors for 2 businesses
+[2025-03-21T05:04:41.332Z] Syncing all businesses...
+[2025-03-21T05:04:41.332Z] [VectorStore] Starting sync for all businesses
+[2025-03-21T05:04:41.332Z] ERROR: [VectorStore] Error in syncAllBusinessesToVectorStore:
+[2025-03-21T05:04:41.332Z] ERROR: Error during vector store sync:
+[2025-03-21T05:04:41.332Z] ERROR: MissingSchemaError: Schema hasn't been registered for model "Business".
+Use mongoose.model(name, schema)

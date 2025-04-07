@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Shape -->
+  <path d="M400 700C550 700 670 580 670 430C670 280 550 160 400 160C250 160 130 280 130 430C130 580 250 700 400 700Z" fill="#F3F4F6"/>
+  
+  <!-- Abstract Shapes -->
+  <circle cx="400" cy="430" r="240" fill="#EEF2FF"/>
+  <path d="M400 670C523.594 670 624 569.594 624 446C624 322.406 523.594 222 400 222C276.406 222 176 322.406 176 446C176 569.594 276.406 670 400 670Z" fill="#F9FAFB"/>
+  
+  <!-- Professional Figure -->
+  <!-- Head -->
+  <circle cx="400" cy="320" r="80" fill="#7C3AED"/>
+  
+  <!-- Body -->
+  <path d="M280 460C280 404.772 324.772 360 380 360H420C475.228 360 520 404.772 520 460V600H280V460Z" fill="#7C3AED"/>
+  
+  <!-- Suit Details -->
+  <path d="M380 360H420V600H380V360Z" fill="#6D28D9"/>
+  <path d="M320 460C320 432.386 342.386 410 370 410H430C457.614 410 480 432.386 480 460V480H320V460Z" fill="#8B5CF6"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="600" cy="300" r="40" fill="#E0E7FF" opacity="0.6"/>
+  <circle cx="200" cy="500" r="60" fill="#E0E7FF" opacity="0.6"/>
+  <circle cx="550" cy="600" r="30" fill="#E0E7FF" opacity="0.6"/>
+  
+  <!-- Abstract Lines -->
+  <path d="M150 350C200 300 250 280 300 270" stroke="#8B5CF6" stroke-width="4" stroke-linecap="round"/>
+  <path d="M500 270C550 280 600 300 650 350" stroke="#8B5CF6" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Gradient Overlay -->
+  <circle cx="400" cy="430" r="200" fill="url(#paint0_radial)" opacity="0.1"/>
+  
+  <!-- Definitions -->
+  <defs>
+    <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(400 430) rotate(90) scale(200)">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg> 

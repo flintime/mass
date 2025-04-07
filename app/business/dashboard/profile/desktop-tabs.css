@@ -1,0 +1,125 @@
+/* Desktop-specific tab styles for business profile page */
+
+.profile-tabs {
+  --tab-background: linear-gradient(to right, #f8fafc, #f1f5f9);
+  --tab-active-color: #3b82f6;
+  --tab-inactive-color: #64748b;
+  --tab-indicator: linear-gradient(to right, #3b82f6, #6366f1);
+  --tab-active-bg: linear-gradient(to bottom, white, #f8fafc);
+  --tab-border-color: rgba(226, 232, 240, 0.8);
+  --tab-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+  
+  /* Background container styling */
+  background: white;
+  border-radius: 1.25rem;
+  padding: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f1f5f9;
+}
+
+/* Tab list container */
+.profile-tabs-list {
+  /* Removed visual background styling */
+  background: transparent;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  overflow: visible;
+}
+
+/* Remove the animated background indicator */
+.profile-tabs-list::before {
+  content: none;
+}
+
+/* Position the indicator based on active tab - keeping selectors for future use */
+[data-state="basic"] .profile-tabs-list {
+  /* No transform needed */
+}
+
+[data-state="location"] .profile-tabs-list {
+  /* No transform needed */
+}
+
+[data-state="additional"] .profile-tabs-list {
+  /* No transform needed */
+}
+
+[data-state="images"] .profile-tabs-list {
+  /* No transform needed */
+}
+
+/* Tab triggers */
+.profile-tab-trigger {
+  position: relative;
+  border-radius: 0.75rem;
+  font-weight: 500;
+  color: var(--tab-inactive-color);
+  min-height: 3.5rem;
+  transition: all 0.3s ease;
+  overflow: visible;
+  z-index: 2;
+  padding: 0.75rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Tab hover state */
+.profile-tab-trigger:hover {
+  background-color: rgba(230, 240, 255, 0.5);
+}
+
+/* Active tab state */
+.profile-tab-trigger[data-state="active"] {
+  background: rgba(230, 240, 255, 0.7);
+  color: var(--tab-active-color);
+  font-weight: 600;
+  box-shadow: none;
+  border-radius: 0.75rem;
+}
+
+/* Tab indicator line */
+.profile-tab-trigger::after {
+  content: "";
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background: var(--tab-indicator);
+  transition: width 0.3s ease;
+  border-radius: 3px;
+  z-index: 3;
+}
+
+.profile-tab-trigger[data-state="active"]::after {
+  width: 40%;
+}
+
+/* Remove the problematic ::before pseudo-element from profile-tabs */
+.profile-tabs::before {
+  content: none;
+}
+
+/* Tab content */
+.profile-tab-content {
+  animation: fade-in 0.35s ease-out;
+  will-change: opacity, transform;
+  padding-top: 0.5rem;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 

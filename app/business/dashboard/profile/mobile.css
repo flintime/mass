@@ -1,0 +1,383 @@
+/* Mobile styles for business profile page */
+
+@media (max-width: 768px) {
+  /* Match the mobile-dashboard-header class to ensure it's not hidden */
+  .mobile-dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background-color: white;
+    border-bottom: 1px solid #f0f0f0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Business name dropdown styles - ensure compatibility */
+  .mobile-business-dropdown-trigger {
+    display: flex !important;
+    align-items: center !important;
+    background-color: rgba(243, 244, 246, 0.6) !important;
+    padding: 0.5rem 0.75rem !important;
+    border-radius: 0.5rem !important;
+    gap: 0.375rem !important;
+    color: #4b5563 !important;
+    transition: all 0.2s ease !important;
+    cursor: pointer !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04) !important;
+    border: 1px solid rgba(0, 0, 0, 0.03) !important;
+  }
+  
+  /* Container adjustments */
+  .mobile-container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+  
+  /* Page-specific header styles */
+  .mobile-header {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .mobile-header h1 {
+    font-size: 1.5rem !important;
+    text-align: center !important;
+  }
+  
+  .mobile-header-actions {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  
+  /* Tab navigation - Removed background styling */
+  .mobile-tabs-list {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 0.5rem !important;
+    padding: 0.5rem !important;
+    background: transparent !important;
+    border-radius: 1rem !important;
+    border: none !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+    position: relative !important;
+  }
+  
+  /* Mobile animated tab indicator - removed */
+  .mobile-tabs-list::before {
+    content: none !important;
+  }
+  
+  /* Position selectors kept for reference but no longer used */
+  [data-state="basic"] .mobile-tabs-list::before {
+    /* Removed transform */
+  }
+  
+  [data-state="location"] .mobile-tabs-list::before {
+    /* Removed transform */
+  }
+  
+  [data-state="additional"] .mobile-tabs-list::before {
+    /* Removed transform */
+  }
+  
+  [data-state="images"] .mobile-tabs-list::before {
+    /* Removed transform */
+  }
+  
+  .mobile-tabs-list-item {
+    font-size: 0.75rem !important;
+    height: 3.25rem !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 0.75rem !important;
+    position: relative !important;
+    overflow: visible !important;
+    transition: all 0.3s ease !important;
+    font-weight: 500 !important;
+    color: #64748b !important;
+    box-shadow: none !important;
+    padding: 0.25rem !important;
+    z-index: 2 !important;
+  }
+
+  /* Make tab content more compact for smaller screens */
+  .mobile-tabs-list-item div {
+    flex-direction: column !important;
+    gap: 0.25rem !important;
+    text-align: center !important;
+  }
+
+  /* Active tab styling - Enhanced with background since indicator is removed */
+  .mobile-tabs-list-item[data-state="active"] {
+    background: rgba(230, 240, 255, 0.7) !important;
+    box-shadow: none !important;
+    font-weight: 600 !important;
+    color: #3b82f6 !important;
+  }
+  
+  /* Inactive tab styling */
+  .mobile-tabs-list-item[data-state="inactive"] {
+    background: transparent !important;
+    opacity: 0.85 !important;
+  }
+  
+  /* Tab hover effects */
+  .mobile-tabs-list-item:hover {
+    background-color: rgba(230, 240, 255, 0.5) !important;
+  }
+  
+  /* Tab indicator animation */
+  .mobile-tabs-list-item::after {
+    content: "" !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 0 !important;
+    height: 3px !important;
+    background: linear-gradient(to right, #3b82f6, #6366f1) !important;
+    transition: width 0.3s ease !important;
+    border-radius: 3px !important;
+  }
+
+  .mobile-tabs-list-item[data-state="active"]::after {
+    width: 40% !important;
+  }
+  
+  /* Tab content - Enhanced */
+  .mobile-tab-content {
+    animation: tab-fade-in 0.35s ease-out !important;
+    will-change: opacity, transform !important;
+    padding-top: 0.5rem !important;
+  }
+  
+  @keyframes tab-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Form sections */
+  .mobile-form-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+  
+  /* Card padding */
+  .mobile-card-content {
+    padding: 1.25rem !important;
+  }
+  
+  /* Input fields - larger touch targets */
+  .mobile-input {
+    height: 3rem !important;
+    font-size: 1rem !important;
+    border-radius: 0.5rem !important;
+  }
+
+  .mobile-input:focus {
+    border-width: 2px !important;
+  }
+
+  .mobile-textarea {
+    font-size: 1rem !important;
+    border-radius: 0.5rem !important;
+    min-height: 6rem !important;
+  }
+  
+  /* Labels */
+  .mobile-label {
+    font-size: 0.875rem !important;
+    margin-bottom: 0.375rem !important;
+    display: block !important;
+  }
+  
+  /* Image grid */
+  .mobile-image-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Image container */
+  .mobile-image-container {
+    height: 12rem !important;
+  }
+  
+  /* FAQs section */
+  .mobile-faq-container {
+    padding: 1rem !important;
+    border-radius: 0.75rem !important;
+  }
+
+  .mobile-faq-item {
+    padding: 1rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  /* Business features section */
+  .mobile-features-section {
+    flex-wrap: wrap !important;
+    gap: 0.5rem !important;
+  }
+
+  .mobile-feature-tag {
+    padding: 0.5rem 0.75rem !important;
+    font-size: 0.875rem !important;
+  }
+  
+  /* Service items section */
+  .mobile-services-section {
+    flex-wrap: wrap !important;
+    gap: 0.5rem !important;
+  }
+
+  .mobile-service-tag {
+    padding: 0.5rem 0.75rem !important;
+    font-size: 0.875rem !important;
+  }
+  
+  /* Improved add button for features and services */
+  .mobile-add-button {
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+    min-width: 2.5rem !important;
+    min-height: 2.5rem !important;
+    padding: 0 !important;
+    border-radius: 9999px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.2s ease !important;
+  }
+  
+  .mobile-add-button svg {
+    height: 1rem !important;
+    width: 1rem !important;
+  }
+  
+  /* Blue variant for services - keeping class name but changing colors to violet */
+  .mobile-add-button-blue {
+    background-color: rgba(237, 233, 254, 0.9) !important;
+    border: 1px solid rgba(139, 92, 246, 0.3) !important;
+    color: rgb(109, 40, 217) !important;
+  }
+  
+  .mobile-add-button-blue:hover {
+    background-color: rgba(221, 214, 254, 1) !important;
+    transform: scale(1.05) !important;
+  }
+  
+  /* Purple variant for features */
+  .mobile-add-button-violet {
+    background-color: rgba(237, 233, 254, 0.9) !important;
+    border: 1px solid rgba(139, 92, 246, 0.3) !important;
+    color: rgb(109, 40, 217) !important;
+  }
+  
+  .mobile-add-button-violet:hover {
+    background-color: rgba(221, 214, 254, 1) !important;
+    transform: scale(1.05) !important;
+  }
+  
+  /* Save button */
+  .mobile-save-button {
+    width: 100% !important;
+    margin-top: 0.75rem !important;
+    justify-content: center !important;
+    height: 3rem !important;
+    font-size: 1rem !important;
+    border-radius: 0.5rem !important;
+  }
+  
+  /* Adjust image upload button */
+  .mobile-image-upload {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    gap: 1rem !important;
+  }
+  
+  /* Address autocomplete */
+  .mobile-address-autocomplete {
+    width: 100% !important;
+  }
+  
+  /* Buttons in mobile */
+  .mobile-full-width-button {
+    width: 100% !important;
+    margin-top: 0.75rem !important;
+    height: 3rem !important;
+    font-size: 0.9375rem !important;
+  }
+
+  /* Fixed save button at bottom for better UX */
+  .mobile-floating-save {
+    position: fixed !important;
+    bottom: 1rem !important;
+    left: 1rem !important;
+    right: 1rem !important;
+    z-index: 50 !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15) !important;
+    border-radius: 0.5rem !important;
+    height: 3.5rem !important;
+    animation: slide-up 0.3s ease-out !important;
+  }
+
+  @keyframes slide-up {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Improved animations for tab switching */
+  .mobile-tab-content {
+    animation: fade-in 0.3s ease-out !important;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Improved select dropdown */
+  .mobile-select {
+    height: 3rem !important;
+    font-size: 1rem !important;
+  }
+
+  /* Extra spacing for easy scrolling at bottom */
+  .mobile-bottom-spacing {
+    padding-bottom: 5rem !important;
+  }
+
+  /* Section dividers */
+  .mobile-section-divider {
+    margin: 1.5rem 0 !important;
+    height: 1px !important;
+    background: linear-gradient(90deg, rgba(0,0,0,0.03) 0%, rgba(0,0,0,0.06) 50%, rgba(0,0,0,0.03) 100%) !important;
+  }
+} 

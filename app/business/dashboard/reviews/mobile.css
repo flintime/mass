@@ -1,0 +1,160 @@
+/* Mobile styles for business dashboard reviews page */
+@media (max-width: 768px) {
+  /* Container spacing */
+  .mobile-container {
+    padding: 1rem !important;
+    width: 100% !important;
+  }
+
+  /* Page header */
+  .mobile-header {
+    text-align: center;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .mobile-header h1 {
+    font-size: 1.75rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .mobile-header p {
+    font-size: 0.875rem !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Stats section */
+  .mobile-stats-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.75rem !important;
+  }
+
+  .mobile-stat-card {
+    min-height: 100px;
+  }
+
+  .mobile-stat-card .card-header {
+    padding: 1rem !important;
+  }
+
+  .mobile-stat-card .card-title {
+    font-size: 1.5rem !important;
+  }
+
+  .mobile-stat-card .card-description {
+    font-size: 0.8rem !important;
+  }
+
+  /* Rating distribution */
+  .mobile-rating-distribution .card-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.5rem !important;
+  }
+
+  .mobile-rating-distribution .card-content {
+    padding: 1rem !important;
+  }
+
+  /* Reviews section */
+  .mobile-reviews-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .mobile-reviews-header h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .mobile-reviews-header .select-trigger {
+    width: 100% !important;
+  }
+
+  /* Review card */
+  .mobile-review-card .card-header {
+    padding: 1rem 1rem 0 1rem !important;
+  }
+
+  .mobile-review-card .card-header-content {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.75rem !important;
+  }
+
+  .mobile-review-card .customer-details {
+    width: 100% !important;
+  }
+
+  .mobile-review-card .review-date {
+    width: 100% !important;
+    justify-content: flex-start !important;
+    margin-top: 0.25rem !important;
+  }
+
+  .mobile-review-card .card-content {
+    padding: 1rem !important;
+  }
+
+  .mobile-review-card .review-text {
+    font-size: 0.95rem !important;
+    padding: 0.875rem !important;
+  }
+
+  .mobile-review-card .reply-actions {
+    flex-wrap: wrap !important;
+  }
+
+  .mobile-review-card .reply-container {
+    padding: 0.875rem !important;
+  }
+
+  .mobile-review-card .textarea {
+    min-height: 80px !important;
+  }
+
+  .mobile-review-card .card-footer {
+    padding: 1rem !important;
+  }
+
+  /* Reply section */
+  .mobile-reply-header {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .mobile-reply-actions {
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+    width: 100% !important;
+  }
+
+  .mobile-reply-actions button {
+    width: 100% !important;
+  }
+
+  /* Tips section */
+  .mobile-tips-section .card-header {
+    padding: 1rem 1rem 0 1rem !important;
+  }
+
+  .mobile-tips-section .card-content {
+    padding: 1rem !important;
+  }
+
+  .mobile-tips-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+  }
+
+  .mobile-tip-card {
+    padding: 1rem !important;
+  }
+
+  /* Alert dialog */
+  .mobile-alert-dialog {
+    width: 90% !important;
+    max-width: 500px !important;
+  }
+} 

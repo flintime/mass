@@ -1,0 +1,165 @@
+/* Mobile styles for business dashboard settings page */
+@media (max-width: 768px) {
+  /* Container and layout */
+  .mobile-container {
+    padding: 1rem !important;
+    width: 100% !important;
+  }
+
+  .mobile-header {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .mobile-header h1 {
+    font-size: 1.75rem !important;
+  }
+
+  /* Card styles */
+  .mobile-card {
+    margin-bottom: 1.25rem !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+  }
+
+  .mobile-card-header {
+    padding: 1.25rem 1.25rem 0.5rem 1.25rem !important;
+  }
+
+  .mobile-card-title {
+    font-size: 1.125rem !important;
+  }
+
+  .mobile-card-description {
+    font-size: 0.875rem !important;
+    line-height: 1.3 !important;
+  }
+
+  .mobile-card-content {
+    padding: 0.75rem 1.25rem 1.25rem 1.25rem !important;
+  }
+
+  .mobile-card-footer {
+    padding: 1rem 1.25rem !important;
+  }
+
+  /* Subscription section */
+  .mobile-subscription-info {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.75rem !important;
+  }
+
+  .mobile-subscription-button {
+    width: 100% !important;
+    margin-top: 0.5rem !important;
+  }
+
+  /* Preferences section */
+  .mobile-preference-item {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.75rem !important;
+    padding-bottom: 1rem !important;
+    margin-bottom: 1rem !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+  }
+
+  .mobile-preference-item:last-child {
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+  }
+
+  .mobile-preference-controls {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+  }
+
+  /* Disabled preferences styling */
+  .mobile-preference-item {
+    opacity: 0.8;
+  }
+  
+  .mobile-preference-controls .disabled {
+    opacity: 0.5;
+  }
+
+  /* Security section */
+  .mobile-password-form .input-group {
+    margin-bottom: 1.25rem !important;
+  }
+
+  .mobile-password-form .button {
+    width: 100% !important;
+  }
+
+  .mobile-password-toggle {
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    right: 0.75rem !important;
+  }
+
+  .mobile-password-strength {
+    margin-top: 0.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Legal section */
+  .mobile-legal-item {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.75rem !important;
+    padding: 1rem 0 !important;
+  }
+
+  .mobile-legal-item button,
+  .mobile-legal-item a {
+    width: 100% !important;
+  }
+
+  /* Delete account section */
+  .mobile-delete-button {
+    width: 100% !important;
+  }
+
+  /* Dialog/Modal styles */
+  .mobile-dialog {
+    width: 100% !important;
+    max-width: 90% !important;
+    margin: 0.5rem !important;
+    padding: 1.25rem !important;
+  }
+
+  .mobile-dialog-header {
+    padding: 0 0 1rem 0 !important;
+  }
+
+  .mobile-dialog-footer {
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+  }
+
+  .mobile-dialog-footer button {
+    width: 100% !important;
+  }
+
+  /* Form controls */
+  .mobile-form-group {
+    margin-bottom: 1.25rem !important;
+  }
+
+  .mobile-form-label {
+    font-size: 0.9rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  .mobile-form-input {
+    height: 2.75rem !important;
+    font-size: 1rem !important;
+  }
+
+  .mobile-form-button {
+    width: 100% !important;
+    height: 2.75rem !important;
+    font-size: 0.95rem !important;
+  }
+} 

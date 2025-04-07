@@ -1,0 +1,43 @@
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="service-pattern" width="400" height="400" patternUnits="userSpaceOnUse">
+      <!-- Wrench -->
+      <path d="M60 80 Q70 70, 80 80 L110 50 Q120 40, 130 50 L140 60 Q150 70, 140 80 L110 110 Q100 120, 90 110 L80 100 Q70 90, 60 80" 
+        fill="none" stroke="white" stroke-width="4" opacity="0.8"/>
+      
+      <!-- House -->
+      <path d="M280 120 L320 80 L360 120 L360 160 L280 160 Z M310 160 L330 160 L330 140 L310 140 Z" 
+        fill="none" stroke="white" stroke-width="4" opacity="0.8"/>
+      
+      <!-- Lightning Bolt -->
+      <path d="M160 240 L190 240 L170 280 L200 280 L150 340 L160 290 L130 290 Z" 
+        fill="none" stroke="white" stroke-width="4" opacity="0.8"/>
+      
+      <!-- Car -->
+      <path d="M280 280 L320 280 L340 300 L340 320 L260 320 L260 300 Z M270 320 A10 10 0 0 0 270 340 A10 10 0 0 0 270 320 M330 320 A10 10 0 0 0 330 340 A10 10 0 0 0 330 320" 
+        fill="none" stroke="white" stroke-width="4" opacity="0.8"/>
+      
+      <!-- Moving Box -->
+      <path d="M80 360 L120 360 L120 320 L80 320 Z M80 360 L80 320 M120 360 L120 320" 
+        fill="none" stroke="white" stroke-width="4" opacity="0.8"/>
+      
+      <!-- Plumbing -->
+      <path d="M240 200 C260 200, 260 180, 280 180 L300 180 C320 180, 320 200, 340 200" 
+        fill="none" stroke="white" stroke-width="4" opacity="0.8"/>
+
+      <!-- Additional Icons in Different Positions -->
+      <!-- Cleaning Brush -->
+      <path d="M50 200 L70 180 L90 200 L70 220 Z M70 180 L70 160" 
+        fill="none" stroke="white" stroke-width="4" opacity="0.8"/>
+      
+      <!-- Tools -->
+      <path d="M180 100 L200 80 L220 100 M190 90 L210 110" 
+        fill="none" stroke="white" stroke-width="4" opacity="0.8"/>
+      
+      <!-- Paint Roller -->
+      <path d="M350 250 L370 230 L380 240 L360 260 Z M360 260 L340 280" 
+        fill="none" stroke="white" stroke-width="4" opacity="0.8"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="800" fill="url(#service-pattern)"/>
+</svg> 
